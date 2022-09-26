@@ -1,12 +1,10 @@
 {
-    "name": "Blend & Run",
-    "version": "1.0.0",
-    "description": "Makes your life easier",
+    "name": "Blend & Run: Enable copy and paste",
+    "version": "0.0.0.1",
+    "description": "Extension to copy & paste text on websites which block it.",
     "manifest_version": 3,
     "author": "Sandeep Pani , Sathvik Achanta & Akash Muriki",
     "permissions": [
-        "tabs",
-        "activeTab",
         "storage",
         "unlimitedStorage"
     ],

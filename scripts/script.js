@@ -1,20 +1,20 @@
-console.log("contentScript running");
+// console.log("contentScript running");
 
-document.addEventListener("keydown", keyPressed);
+// document.addEventListener("keydown", keyPressed);
 
-function keyPressed(e) {
-  //   if(e.code == "Numpad1") {
-  //     console.log("Numpad1 Pressed");
-  //   }
-  console.log(e.which);
-}
+// function keyPressed(e) {
+//   //   if(e.code == "Numpad1") {
+//   //     console.log("Numpad1 Pressed");
+//   //   }
+//   console.log(e.which);
+// }
 
 $(document).keydown(function (event) {
   if (event.altKey && event.which === 88) {
     //   var text = "";
-    console.log("altx pressed!");
+    // console.log("altx pressed!");
     chrome.storage.local.get(["lastCopied"], function (result) {
-      console.log("Value currently is " + JSON.stringify(result));
+      // console.log("Value currently is " + JSON.stringify(result));
 
       //   text = result.lastCopied;
       //   text = result.lastCopied.replace(/{/g, "{}");
