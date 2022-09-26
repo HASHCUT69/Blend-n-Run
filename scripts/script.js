@@ -1,29 +1,40 @@
-
-
 console.log("contentScript running");
 
-document.addEventListener('keydown', keyPressed);
+document.addEventListener("keydown", keyPressed);
 
 function keyPressed(e) {
-//   if(e.code == "Numpad1") {
-//     console.log("Numpad1 Pressed");
-//   }
-console.log(e.which);
+  //   if(e.code == "Numpad1") {
+  //     console.log("Numpad1 Pressed");
+  //   }
+  console.log(e.which);
 }
 
+$(document).keydown(function (event) {
+  if (event.altKey && event.which === 88) {
+    //   var text = "";
+    console.log("altx pressed!");
+    chrome.storage.local.get(["lastCopied"], function (result) {
+      console.log("Value currently is " + JSON.stringify(result));
 
-$(document).keydown(function(event) {
-    if (event.altKey && event.which === 88)
-    {
-        var text;
-        console.log("altx pressed!");
-        chrome.storage.local.get(['lastCopied'], function(result) {
-            console.log('Value currently is ' + JSON.stringify(result));
-            text = result.lastCopied;
-            console.log(text);
-            $(document.activeElement).sendkeys(text);
-        });
-    }
+      //   text = result.lastCopied;
+      //   text = result.lastCopied.replace(/{/g, "{}");
+      //   text = text.replace(/}/g, "{}");
+      //   console.log(text);
+      var unmodifiedText = result.lastCopied;
+      var modifiedText = "";
+      for (var i = 0; i < unmodifiedText.length; i++) {
+        var c = unmodifiedText[i];
+        if (c == "{" || c == "}") {
+          modifiedText += "{" + c + "}";
+        } else {
+          modifiedText += c;
+        }
+      }
+      //   $(document.activeElement).sendkeys(`${text}`);
+
+      $(document.activeElement).sendkeys(modifiedText);
+    });
+  }
 });
 
 // $(document).keydown(function(event) {
@@ -47,12 +58,10 @@ $(document).keydown(function(event) {
 //   temp = val;
 // }
 
-
 //Event Listeners for the function
 
 // var runScript = document.getElementById("run-script-btn");
 // runScript.addEventListener("click",onclick);
-
 
 // inputText.addEventListener("change",(e)=>{
 //     onchange(e.target.value);
@@ -75,16 +84,13 @@ $(document).keydown(function(event) {
 //     message('Settings saved');
 // });
 
-
-
 // function paste() {
 //     $(document.activeElement).sendkeys(`${copiedContent}`);
 // }
 
 // function copy() {
-  
-// }
 
+// }
 
 // chrome.tabs.query({active: true}, function(tabs) {
 //     var tab = tabs[0];
@@ -125,16 +131,9 @@ $(document).keydown(function(event) {
 // 	document.dispatchEvent(keyboardEvent);
 // }
 
-
 // function runScript(){
 //     copiedContent = document.getElementById('content');
 // }
-
-
-
-
-
-
 
 // $(document).ready(function(){
 //     $("textarea").click(function(){
@@ -143,14 +142,14 @@ $(document).keydown(function(event) {
 
 //     });
 //     // $("div").click(function(){
-    //     //     console.log("clicked")
-    //     //     $(this).sendkeys("hello")
-    
-    //     // });
-    //     $("span").click(function(){
-        //         console.log("clicked")
-        //         $(this).sendkeys("hello")
-        
+//     //     console.log("clicked")
+//     //     $(this).sendkeys("hello")
+
+//     // });
+//     $("span").click(function(){
+//         console.log("clicked")
+//         $(this).sendkeys("hello")
+
 //     });
 
 // });
