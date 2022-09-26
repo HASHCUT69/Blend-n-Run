@@ -30,9 +30,8 @@ $(document).keydown(function (event) {
           modifiedText += c;
         }
       }
-      //   $(document.activeElement).sendkeys(`${text}`);
-
       $(document.activeElement).sendkeys(modifiedText);
+      //   $(document.activeElement).sendkeys(`${text}`);
     });
   }
 });
