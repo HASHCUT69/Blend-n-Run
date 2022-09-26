@@ -19,4 +19,4 @@ Feel free to contribute to this repository as our work here is open-source.
 Please make sure to update tests as appropriate.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/HASHCUT69/Blend-n-Run/blob/main/LICENSE)
