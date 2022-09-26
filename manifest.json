@@ -1,0 +1,36 @@
+{
+    "name": "Blend & Run",
+    "version": "1.0.0",
+    "description": "Makes your life easier",
+    "manifest_version": 3,
+    "author": "Sandeep Pani , Sathvik Achanta & Akash Muriki",
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "storage",
+        "unlimitedStorage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "jquery/jquery-3.6.1.min.js",
+                "billiliteRange/bililiteRange/bililiteRange.js",
+                "billiliteRange/bililiteRange/bililiteRange.undo.js",
+                "billiliteRange/bililiteRange/bililiteRange.lines.js",
+                "billiliteRange/bililiteRange/jquery.sendkeys.js",
+                "scripts/script.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Copy-paste-code",
+        "default_icon": "images/icon.jpeg",
+        "icons": { "16": "images/iconSquare.jpeg",
+           "48": "images/iconSquare.jpeg",
+          "128": "images/iconSquare.jpeg" }
+    }
+}

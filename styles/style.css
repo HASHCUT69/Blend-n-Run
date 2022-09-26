@@ -1,0 +1,244 @@
+body {
+    /* border-radius: 10%; */
+    height: 300px;
+    width: 400px;
+}
+
+.icon {
+    width: 80px;
+    height: auto;
+}
+
+.b3 {
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.container-1 {
+    background-color: black;
+    background-color: #000819;
+    color: white;
+    border-radius: 0px !important;
+    height: 475px;
+    width: 400px;
+}
+
+#github-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.contribute {
+    /* border: 1px solid white; */
+    /* align-items: right; */
+    margin: 5px;
+    position: absolute;
+    right: 0;
+    display: block;
+    text-decoration: none;
+}
+
+.b1 {
+    width: 40px;
+    height: 18px;
+    /* justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important; */
+}
+
+.linkedin-icon {
+    width: 15px;
+    height: auto;
+}
+
+#content {
+    height: 200px;
+    background-color: #000819;
+    background-color: black;
+    color: cornflowerblue;
+    /* border: 2px solid grey; */
+    width: 100%;
+    /* outline: #6002ee; */
+    overflow: auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    scrollbar-color: black;
+    resize: none;
+}
+
+.profile-links:hover {
+    text-decoration: none;
+    color: #521aa6;
+}
+
+.profile-links {
+    color: rgb(142, 142, 233);
+}
+
+textarea::-webkit-scrollbar {
+    border-radius: 5px;
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 5px;
+    outline: 1px solid cornflowerblue;
+}
+
+textarea#content:focus {
+    box-shadow: 0 0 10px #6002ee;
+}
+
+#run-script-btn {
+    /* background-color: #6002ee; */
+    width: 100px;
+    color: white;
+    background-color: #000814;
+    border: 2px solid #6002ee;
+    margin-top: 12px;
+}
+
+#run-script-btn:hover {
+    /* color: black; */
+    transition: background-color 0.2s ease-in;
+    background-color: #6002ee;
+}
+
+#contribute-btn {
+    /* background-color: #6002ee; */
+    width: 300px;
+    color: white;
+    margin-left: 50px;
+    /* position: absolute; */
+    background-color: #000814;
+    border: 2px solid #6002ee;
+    margin-bottom: 10px;
+}
+
+#contribute-btn:hover {
+    /* color: black; */
+    transition: background-color 0.2s ease-in;
+    background-color: #6002ee;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.blockquote-footer {
+    padding-top: 10px;
+    position: absolute;
+    /* text-align: center; */
+    /* align-items: center; */
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* margin: px; */
+}
+
+.text-muted {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+    font-size: small;
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-between; */
+
+}
+
+.text-muted1 {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+    font-size: 15px;
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-between; */
+
+}
+
+.team-info {
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    margin: 10px;
+}
+
+.animate {
+    animation: disappear 1s linear;
+}
+
+.copyAlert {
+    color: grey;
+    opacity: 0;
+    font-size: 12px;
+}
+
+@keyframes disappear {
+    10% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.back-link {
+    position: absolute;
+    left: 0;
+    margin: 15px !important;
+    color: white;
+}
+
+.back-link:hover {
+    color: #6002ee;
+    cursor: pointer;
+}
+
+#github-contribute-icon {
+    width: 100px;
+    height: 100px;
+    /* position: relative; */
+    left: 0;
+    right: 0;
+    /* margin-left: 140px; */
+    justify-content: center;
+    align-items: center;
+}
+
+#hashcut-icon {
+    width: 80px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    /* margin-left: 140px; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.contribute-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
