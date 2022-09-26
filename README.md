@@ -9,7 +9,7 @@ Go to the chrome extension [store]() to add Blend & Run to your chrome.
 
 ## Usage
 
-![](https://raw.githubusercontent.com/HASHCUT69/Blend-n-Run/master/images/screenshot-1.jpeg?token=GHSAT0AAAAAABX7KSDCSRWS3VTCNMTKURT4YZROOPQ)
+![](https://github.com/HASHCUT69/Blend-n-Run/blob/master/images/screenshot-1.jpeg)
 
 > Just enter the text/code you want to paste and click on copy. Press ` ALT`+`X` where you want to paste the code.
 
