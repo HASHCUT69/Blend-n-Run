@@ -28,7 +28,7 @@
     "action": {
         "default_icon": "images/bnr-icon_760x760.png",
         "default_popup": "index.html",
-        "default_title": "Copy-paste-code",
+        "default_title": "Copy-paste-code"
         
         
     }
