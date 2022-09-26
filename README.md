@@ -16,6 +16,8 @@ Go to the chrome extension [store]() to add Blend & Run to your chrome.
 ## Contributing
 Feel free to contribute to this repository as our work here is open-source.
 
+Note: You have to clone [bililiteRange](https://github.com/dwachss/bililiteRange) repository to run the extension locally.
+
 Please make sure to update tests as appropriate.
 
 ## License
