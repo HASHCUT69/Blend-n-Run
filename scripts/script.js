@@ -10,7 +10,7 @@
 // }
 
 $(document).keydown(function (event) {
-  if (event.altKey && event.which === 88) {
+  if (event.altKey && event.which === 88 || (event.ctrlKey && event.shiftKey && event.which === 88)) {
     //   var text = "";
     // console.log("altx pressed!");
     chrome.storage.local.get(["lastCopied"], function (result) {
