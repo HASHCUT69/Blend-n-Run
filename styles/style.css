@@ -1,6 +1,6 @@
 body {
     /* border-radius: 10%; */
-    height: 300px;
+    height: 500px;
     width: 400px;
 }
 
@@ -19,7 +19,7 @@ body {
     background-color: #000819;
     color: white;
     border-radius: 0px !important;
-    height: 475px;
+    height: 500px;
     width: 400px;
 }
 
@@ -51,10 +51,14 @@ body {
     height: auto;
 }
 
+.badge-btn{
+    width:50px;
+}
+
 #content {
     height: 200px;
     background-color: #000819;
-    background-color: black;
+    /* background-color: black; */
     color: cornflowerblue;
     /* border: 2px solid grey; */
     width: 100%;
@@ -66,6 +70,8 @@ body {
     border-radius: 4px;
     scrollbar-color: black;
     resize: none;
+
+    box-shadow: 0 0 3px #bc028e;
 }
 
 .profile-links:hover {
@@ -223,6 +229,19 @@ textarea#content:focus {
     /* margin-left: 140px; */
     justify-content: center;
     align-items: center;
+}
+
+.whats-new {
+    font-size: 10px;
+    position: absolute;
+    width: 100px;
+    right:0;
+    /* margin-left: 140px; */
+    justify-content: center;
+    align-items: center;
+}
+.whats-new:hover {
+    cursor: pointer;
 }
 
 #hashcut-icon {
