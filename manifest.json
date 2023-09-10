@@ -20,7 +20,8 @@
                 "billiliteRange/bililiteRange/bililiteRange.lines.js",
                 "billiliteRange/bililiteRange/jquery.sendkeys.js",
                 "scripts/script.js",
-                "dependencies/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"
+                "dependencies/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js",
+                "scripts/popup.js"
             ]
         }
     ],
