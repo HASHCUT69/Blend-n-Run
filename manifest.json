@@ -1,6 +1,6 @@
 {
-    "name": "Blend & Run: Enable copy and paste",
-    "version": "1.0.0.0",
+    "name": "Blend & Run: Enable copy and paste on blocked websites",
+    "version": "1.0.0.1",
     "description": "Extension to copy & paste text on websites which block it.",
     "manifest_version": 3,
     "author": "Sandeep Pani , Sathvik Achanta & Akash Muriki",
@@ -14,12 +14,14 @@
                 "<all_urls>"
             ],
             "js": [
-                "jquery/jquery-3.6.1.min.js",
+                "dependencies/jquery/jquery-3.6.1.min.js",
                 "billiliteRange/bililiteRange/bililiteRange.js",
                 "billiliteRange/bililiteRange/bililiteRange.undo.js",
                 "billiliteRange/bililiteRange/bililiteRange.lines.js",
                 "billiliteRange/bililiteRange/jquery.sendkeys.js",
-                "scripts/script.js"
+                "scripts/script.js",
+                "dependencies/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js",
+                "scripts/popup.js"
             ]
         }
     ],
