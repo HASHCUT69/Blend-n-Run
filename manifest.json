@@ -14,12 +14,13 @@
                 "<all_urls>"
             ],
             "js": [
-                "jquery/jquery-3.6.1.min.js",
+                "dependencies/jquery/jquery-3.6.1.min.js",
                 "billiliteRange/bililiteRange/bililiteRange.js",
                 "billiliteRange/bililiteRange/bililiteRange.undo.js",
                 "billiliteRange/bililiteRange/bililiteRange.lines.js",
                 "billiliteRange/bililiteRange/jquery.sendkeys.js",
-                "scripts/script.js"
+                "scripts/script.js",
+                "dependencies/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"
             ]
         }
     ],
