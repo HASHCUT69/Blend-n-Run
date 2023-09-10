@@ -1,26 +1,59 @@
-body {
-    /* border-radius: 10%; */
-    height: 500px;
-    width: 400px;
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
 }
 
-.icon {
-    width: 80px;
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
+}
+
+.card-header img.icon {
+    width: 80px;
+    /* Decreased the width of the "Blend and Run" logo */
+    height: auto;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-header {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 3%;
 }
 
 .b3 {
     opacity: 0;
     transition: 0.3s ease-in;
+    background-color: grey;
+    color: white;
+    border-radius: 3px;
+    padding: 3px 5px;
 }
 
 .container-1 {
-    background-color: black;
     background-color: #000819;
     color: white;
     border-radius: 0px !important;
-    height: 500px;
+    height: auto;
     width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 #github-icon {
@@ -31,10 +64,9 @@ body {
 .contribute {
     /* border: 1px solid white; */
     /* align-items: right; */
-    margin: 5px;
     position: absolute;
     right: 0;
-    display: block;
+    top: 10px;
     text-decoration: none;
 }
 
@@ -51,18 +83,15 @@ body {
     height: auto;
 }
 
-.badge-btn{
-    width:50px;
+.badge-btn {
+    width: 50px;
 }
 
 #content {
-    height: 200px;
-    background-color: #000819;
-    /* background-color: black; */
+    height: 250px;
+    background-color: #000800;
     color: cornflowerblue;
-    /* border: 2px solid grey; */
-    width: 100%;
-    /* outline: #6002ee; */
+    width: 94%;
     overflow: auto;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -70,18 +99,9 @@ body {
     border-radius: 4px;
     scrollbar-color: black;
     resize: none;
-
-    box-shadow: 0 0 3px #bc028e;
+    box-shadow: 0 0 1px #bc028e;
 }
 
-.profile-links:hover {
-    text-decoration: none;
-    color: #521aa6;
-}
-
-.profile-links {
-    color: rgb(142, 142, 233);
-}
 
 textarea::-webkit-scrollbar {
     border-radius: 5px;
@@ -100,15 +120,19 @@ textarea::-webkit-scrollbar-thumb {
 
 textarea#content:focus {
     box-shadow: 0 0 10px #6002ee;
+    outline: none;
 }
 
 #run-script-btn {
     /* background-color: #6002ee; */
-    width: 100px;
+    width: 30%;
     color: white;
     background-color: #000814;
     border: 2px solid #6002ee;
     margin-top: 12px;
+    padding: 10px 10px;
+    border-radius: 7%;
+    cursor: pointer;
 }
 
 #run-script-btn:hover {
@@ -118,76 +142,116 @@ textarea#content:focus {
 }
 
 #contribute-btn {
-    /* background-color: #6002ee; */
-    width: 300px;
+    background-color: #000010;
+    /* Background color */
     color: white;
-    margin-left: 50px;
-    /* position: absolute; */
-    background-color: #000814;
+    width: 50%;
+    margin: auto;
+    margin-left: 24%;
+    margin-top: 3%;
+    /* Text color */
+    padding: 10px 10px;
+    /* Padding for spacing */
     border: 2px solid #6002ee;
-    margin-bottom: 10px;
+    /* Remove the border */
+    border-radius: 5px;
+    /* Border radius */
+    cursor: pointer;
+    /* Cursor style */
+    font-size: 16px;
+    /* Font size */
+    font-weight: bold;
+    /* Bold font weight */
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
 }
 
+/* Hover effect for the "Contribute" button */
 #contribute-btn:hover {
-    /* color: black; */
-    transition: background-color 0.2s ease-in;
     background-color: #6002ee;
+    /* Change background color on hover */
 }
 
 .selector-for-some-widget {
     box-sizing: content-box;
 }
 
+
+.profile-links:hover {
+    text-decoration: none;
+    color: #521aa6;
+}
+
+.profile-links {
+    color: rgb(142, 142, 233);
+    opacity: 100% !important;
+}
+
 .blockquote-footer {
-    padding-top: 10px;
-    position: absolute;
-    /* text-align: center; */
-    /* align-items: center; */
-    right: 0;
-    left: 0;
-    bottom: 0;
-    /* margin: px; */
-}
-
-.text-muted {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 10px;
-    font-size: small;
-    /* display: flex; */
+    position: relative;
     align-items: center;
-    /* justify-content: space-between; */
-
+    text-align: center;
+    padding: 10px;
 }
+
+.muted {
+    opacity: 40%;
+}
+
+.badge.b1.text-bg-secondary.badge-btn {
+    width: 40px;
+    height: 18px;
+}
+
+.badge {
+    background-color: grey;
+    /* Background color */
+    color: white;
+    /* Text color */
+    border-radius: 3px;
+    /* Border radius */
+    padding: 3px 5px;
+    margin: 1%;
+}
+
+
 
 .text-muted1 {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 20px;
+    position: relative;
+    margin: auto;
+    padding: 10px;
     font-size: 15px;
-    /* display: flex; */
-    align-items: center;
-    /* justify-content: space-between; */
-
+    text-align: center;
 }
 
 .team-info {
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
-    /* padding: 20px; */
-    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 .animate {
     animation: disappear 1s linear;
 }
 
+.short-cuts {
+    text-align: center;
+    align-items: center;
+    display: block;
+    font-size: 12px;
+    /* margin-left: 20%; */
+}
+
 .copyAlert {
     color: grey;
     opacity: 0;
     font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 @keyframes disappear {
@@ -235,11 +299,12 @@ textarea#content:focus {
     font-size: 10px;
     position: absolute;
     width: 100px;
-    right:0;
-    /* margin-left: 140px; */
+    right: 0;
     justify-content: center;
     align-items: center;
+    margin-top: 5px;
 }
+
 .whats-new:hover {
     cursor: pointer;
 }

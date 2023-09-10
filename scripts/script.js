@@ -10,6 +10,7 @@
 // }
 
 $(document).keydown(function (event) {
+  console.log(event.which);
   if (
     (event.altKey && event.which === 88) ||
     (event.ctrlKey && event.shiftKey && event.which === 88)
