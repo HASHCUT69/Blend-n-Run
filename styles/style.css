@@ -1,5 +1,4 @@
 body {
-    /* border-radius: 10%; */
     height: 500px;
     width: 400px;
 }
@@ -29,8 +28,6 @@ body {
 }
 
 .contribute {
-    /* border: 1px solid white; */
-    /* align-items: right; */
     margin: 5px;
     position: absolute;
     right: 0;
@@ -41,9 +38,6 @@ body {
 .b1 {
     width: 40px;
     height: 18px;
-    /* justify-content: center !important;
-    align-items: center !important;
-    text-align: center !important; */
 }
 
 .linkedin-icon {
@@ -58,11 +52,8 @@ body {
 #content {
     height: 200px;
     background-color: #000819;
-    /* background-color: black; */
     color: cornflowerblue;
-    /* border: 2px solid grey; */
     width: 100%;
-    /* outline: #6002ee; */
     overflow: auto;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -103,7 +94,6 @@ textarea#content:focus {
 }
 
 #run-script-btn {
-    /* background-color: #6002ee; */
     width: 100px;
     color: white;
     background-color: #000814;
@@ -112,24 +102,20 @@ textarea#content:focus {
 }
 
 #run-script-btn:hover {
-    /* color: black; */
     transition: background-color 0.2s ease-in;
     background-color: #6002ee;
 }
 
 #contribute-btn {
-    /* background-color: #6002ee; */
     width: 300px;
     color: white;
     margin-left: 50px;
-    /* position: absolute; */
     background-color: #000814;
     border: 2px solid #6002ee;
     margin-bottom: 10px;
 }
 
 #contribute-btn:hover {
-    /* color: black; */
     transition: background-color 0.2s ease-in;
     background-color: #6002ee;
 }
@@ -141,12 +127,9 @@ textarea#content:focus {
 .blockquote-footer {
     padding-top: 10px;
     position: absolute;
-    /* text-align: center; */
-    /* align-items: center; */
     right: 0;
     left: 0;
     bottom: 0;
-    /* margin: px; */
 }
 
 .text-muted {
@@ -155,9 +138,7 @@ textarea#content:focus {
     left: 0;
     bottom: 10px;
     font-size: small;
-    /* display: flex; */
     align-items: center;
-    /* justify-content: space-between; */
 
 }
 
@@ -167,16 +148,13 @@ textarea#content:focus {
     left: 0;
     bottom: 20px;
     font-size: 15px;
-    /* display: flex; */
     align-items: center;
-    /* justify-content: space-between; */
 
 }
 
 .team-info {
     justify-content: center;
     align-items: center;
-    /* padding: 20px; */
     margin: 10px;
 }
 
@@ -223,10 +201,8 @@ textarea#content:focus {
 #github-contribute-icon {
     width: 100px;
     height: 100px;
-    /* position: relative; */
     left: 0;
     right: 0;
-    /* margin-left: 140px; */
     justify-content: center;
     align-items: center;
 }
@@ -236,7 +212,6 @@ textarea#content:focus {
     position: absolute;
     width: 100px;
     right:0;
-    /* margin-left: 140px; */
     justify-content: center;
     align-items: center;
 }
@@ -249,7 +224,6 @@ textarea#content:focus {
     height: 80px;
     left: 0;
     right: 0;
-    /* margin-left: 140px; */
     justify-content: center;
     align-items: center;
     border-radius: 50%;
