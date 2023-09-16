@@ -1,5 +1,5 @@
 # Blend & Run
-Version 1.0.0.0 is out!
+Version 1.0.0.2 is out!
 
 Blend & Run is a chrome extension that helps you paste anything on websites that block copy & paste.
 
