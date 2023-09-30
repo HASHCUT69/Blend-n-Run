@@ -1,6 +1,6 @@
 # Development Setup Guide for Blend & Run Chrome Extension
 
-This guide provides step-by-step instructions on setting up a local development environment for the Blend & Run Chrome Extension. By following these steps, you can test and develop the extension on your local machine before deploying it to your browser.
+This guide provides step-by-step instructions on setting up a local development environment for the Blend & Run Chrome Extension. It also includes an additional step to clone the `bililiteRange` repository, which is a required dependency of the extension. By following these steps, you can test and develop the extension on your local machine before deploying it to your browser.
 
 ## Prerequisites
 
@@ -22,15 +22,26 @@ Before you begin, ensure you have the following prerequisites installed on your 
 
    Replace `yourusername` with your GitHub username or the repository URL you intend to use.
 
-2. **Navigate to the Extension Directory**:
+2. **Clone the `bililiteRange` Repository**:
+
+   The Blend & Run extension has a dependency on the `bililiteRange` library, which should be cloned into a folder called `bililiteRange` within the Blend & Run repository:
+
+   ```bash
+   cd bililiteRange
+   git clone https://github.com/dwachss/bililiteRange.git
+   ```
+
+   This will create a `bililiteRange` folder within the Blend & Run directory.
+
+3. **Navigate to the Extension Directory**:
 
    Change your working directory to the extension's folder:
 
    ```bash
-   cd BlendAndRun
+   cd ..
    ```
 
-3. **Load the Extension in Chrome**:
+4. **Load the Extension in Chrome**:
 
    Now, you'll need to load the extension locally in your Chrome browser:
 
@@ -46,7 +57,7 @@ Before you begin, ensure you have the following prerequisites installed on your 
 
    This will load the extension into your Chrome browser for local testing.
 
-4. **Test the Extension**:
+5. **Test the Extension**:
 
    You should now see the Blend & Run extension icon in your Chrome toolbar. Click the icon to open and test the extension.
 
@@ -66,10 +77,10 @@ For debugging and troubleshooting, you can utilize the Chrome Developer Tools. R
 
 ## Deploying the Extension
 
-Once you are satisfied with your changes, you can package and publish the extension to the Chrome Web Store or share it with others. Refer to the [Chrome Extension Developer Documentation](https://developer.chrome.com/docs/extensions/mv3/getstarted/) for detailed instructions on how to package and distribute your extension.
+The new versions of the extension will be deployed by the maintainers of the repository.
 
-Remember to update the `manifest.json` file with the necessary details, such as the extension name, description, and version, before publishing it.
+Remember to update the `manifest.json` file with the necessary dependencies, and make sure remotely hosted code isn't used anywhere in the project.
 
 ## Conclusion
 
-You now have a local development environment set up for the Blend & Run Chrome Extension. You can make changes, test them locally, and then consider publishing the extension for wider use. Happy coding!
+You now have a local development environment set up for the Blend & Run Chrome Extension, including the `bililiteRange` dependency. You can make changes and test them locally before raising a PR. Happy coding!
