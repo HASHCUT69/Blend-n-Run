@@ -11,7 +11,7 @@ New version is functional in windows, linux and mac OS.
 
 ## Usage
 
-![blend-n-Run-Chrome-Extension-screenshot](https://github.com/HASHCUT69/Blend-n-Run/blob/master/images/screenshot-1.jpeg)
+![blend-n-Run-Chrome-Extension-screenshot](./images/screenshot-1.jpeg)
 
 > Just enter the text/code you want to paste and click on copy. Press ` ALT`+`X` / `Ctrl`+`Shift`+`X`(supported in mac,linux,windows) where you want to paste the code.
 
