@@ -26,7 +26,7 @@
         }
     ],
     "action": {
-        "default_icon": "images/icon_new.png",
+        "default_icon": "images/icon_new_circle.png",
         "default_popup": "index.html",
         "default_title": "Copy-paste-code"
         
