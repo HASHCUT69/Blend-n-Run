@@ -310,13 +310,13 @@ modal-backdrop {
     font-size: 15px;
     color: beige;
     margin-top: -12px;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .model-text:hover {
     color: antiquewhite;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.7;
     text-decoration: underline;
 }
 
@@ -327,50 +327,11 @@ modal-backdrop {
     object-fit: cover;
 }
 
-.card1 .card_title {
-    text-align: center;
-    border-radius: 0px 0px 40px 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    margin-top: -130px;
-    height: 40px;
-    color: cornflowerblue;
-}
-
-.card1 .card_title:hover {
-    cursor: pointer;
-}
-
 .card1:hover {
     transform: scale(0.9, 0.9);
     box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
         -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
-
-/* .card_image:hover .btn-style {
-    display: block;
-}
-
-
-.modal-dialogue .btn-style {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    margin-left: 50px;
-}
-
-.modal-dialogue .btn-style .btn {
-    border-color: cornflowerblue;
-    color: #6002ee;
-}
-
-.modal-dialogue .btn-style .btn:hover {
-    border-color: #000819 !important;
-    background-color: cornflowerblue !important;
-    color: #000819 !important;
-} */
 
 @media all and (max-width: 500px) {
     .card-list {

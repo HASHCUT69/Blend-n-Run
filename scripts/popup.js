@@ -4,17 +4,13 @@ $(document).ready(function () {
 
 
   $("#run-script-btn").click(function () {
-    // storing data in local storage
     let text = $("#content").val();
 
     chrome.storage.local.set({ lastCopied: text }, function () { });
     copyURL();
 
-    // Check if the user should see the card
     if (clickCount % 5 === 0) {
       displayCount++;
-
-      // Show card as a popup every 20 times
       if (displayCount % 10 === 0) {
         showCardPopup();
       }
@@ -61,11 +57,9 @@ const copyURL = () => {
 };
 
 function showCardPopup() {
-  // Check if the user has clicked on the card before
   const clicked = localStorage.getItem("clicked");
 
   if (clicked !== "true") {
-    // Show the card modal
     $('#cardModal').modal('show');
 
     $("#dont-ask").on("click", () => {
@@ -73,12 +67,9 @@ function showCardPopup() {
       localStorage.setItem("clicked", "true");
     });
 
-    // Add event listener for closing the card
     $("#close-card").on("click", () => {
-      // Hide the modal
       $('#cardModal').modal('hide');
 
-      // Update localStorage to indicate that the user has clicked on the card
       localStorage.setItem("clicked", "true");
     });
   }
