@@ -34,14 +34,6 @@ $(document).ready(function () {
       $(".b3").css("opacity", 0);
     }
   );
-  $("#google-icon").hover(
-    function () {
-      $(".b3").css("opacity", 1);
-    },
-    function () {
-      $(".b3").css("opacity", 0);
-    }
-  );
   $("#close-card").click(function () {
     clickCount++;
   });
