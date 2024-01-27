@@ -310,7 +310,7 @@ modal-backdrop {
     font-size: 15px;
     color: beige;
     margin-top: -12px;
-    opacity: 0.4;
+    opacity: 0.1;
 }
 
 .model-text:hover {
