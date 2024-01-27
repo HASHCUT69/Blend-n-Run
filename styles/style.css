@@ -27,24 +27,10 @@ body {
     width: 40px;
 }
 
-#google-icon {
-    height: 28px;
-    width: 28px;
-}
-
 .contribute {
     margin: 5px;
     position: absolute;
     right: 0;
-    display: block;
-    text-decoration: none;
-}
-
-.review {
-    margin: 10px;
-    position: absolute;
-    right: 0;
-    margin-right: 42px;
     display: block;
     text-decoration: none;
 }

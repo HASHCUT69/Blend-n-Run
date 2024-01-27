@@ -39,6 +39,9 @@ $(document).ready(function () {
       $(".b3").css("opacity", 0);
     }
   );
+  $("#close-card").click(function () {
+    clickCount++;
+  });
 });
 const copyURL = () => {
   const copyDiv = document.querySelector(".copyAlert:not(.animate)");
@@ -76,4 +79,5 @@ function showCardPopup(clicked) {
 
     localStorage.setItem("clicked", "true");
   });
+}
 }
