@@ -14,8 +14,6 @@ $(document).ready(function () {
 
   });
 
-
-
   $(".links").click(function () {
     var link = $(this).attr("name");
     chrome.tabs.create({
@@ -31,17 +29,6 @@ $(document).ready(function () {
       $(".b3").css("opacity", 0);
     }
   );
-  $("#google-icon").hover(
-    function () {
-      $(".b3").css("opacity", 1);
-    },
-    function () {
-      $(".b3").css("opacity", 0);
-    }
-  );
-  $("#close-card").click(function () {
-    clickCount++;
-  });
 });
 const copyURL = () => {
   const copyDiv = document.querySelector(".copyAlert:not(.animate)");
@@ -79,5 +66,4 @@ function showCardPopup(clicked) {
 
     localStorage.setItem("clicked", "true");
   });
-}
 }
