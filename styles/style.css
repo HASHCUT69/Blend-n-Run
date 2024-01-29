@@ -255,7 +255,7 @@ modal-backdrop {
 
 .modal-content {
     width: 250px;
-    height: 270px;
+    height: 250px;
     background-color: #000814;
     margin-left: 18%;
     margin-top: 25%;
@@ -266,7 +266,7 @@ modal-backdrop {
 
 .card1 {
     width: 250px;
-    height: 250px;
+    height: 270px;
     border-radius: 40px;
     box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
     cursor: pointer;
@@ -295,7 +295,7 @@ modal-backdrop {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     color: beige;
-    margin-top: -12px;
+    margin-top: 24px;
     opacity: 0.1;
 }
 

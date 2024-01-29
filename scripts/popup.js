@@ -1,6 +1,6 @@
 $(document).ready(function () {
   let clickCount = localStorage.getItem('clickCount');
-  checkifClickCount(clickCount, 'out');
+  checkifClickCount(clickCount);
 
 
   $("#run-script-btn").click(function () {
@@ -10,7 +10,13 @@ $(document).ready(function () {
     chrome.storage.local.set({ lastCopied: text }, function () { });
     copyURL();
 
-    checkifClickCount(clickCount, 'in');
+    const clicked = localStorage.getItem("clicked");
+    if (clicked !== true) {
+      if (clickCount >= 10 && clickCount % 10 === 9) {
+        showCardPopup(clicked);
+      }
+      localStorage.setItem('clickCount', ++clickCount);
+    }
 
   });
 
@@ -40,15 +46,12 @@ const copyURL = () => {
   }
 };
 
-const checkifClickCount = (clickCount, cond) => {
+const checkifClickCount = (clickCount) => {
   const clicked = localStorage.getItem("clicked");
   if (clicked !== true) {
     if (clickCount >= 10 && clickCount % 10 === 0) {
-      console.log("Clicking");
       showCardPopup(clicked);
-      if (cond === 'out') localStorage.setItem('clickCount', ++clickCount);
     }
-    if (cond === 'in') localStorage.setItem('clickCount', ++clickCount);
   }
 }
 
