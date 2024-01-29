@@ -13,7 +13,7 @@ $(document).ready(function () {
     const clicked = localStorage.getItem("clicked");
     if (clicked !== true) {
       if (clickCount >= 10 && clickCount % 10 === 9) {
-        showCardPopup(clicked);
+        showCardPopup();
       }
       localStorage.setItem('clickCount', ++clickCount);
     }
@@ -50,12 +50,12 @@ const checkifClickCount = (clickCount) => {
   const clicked = localStorage.getItem("clicked");
   if (clicked !== true) {
     if (clickCount >= 10 && clickCount % 10 === 0) {
-      showCardPopup(clicked);
+      showCardPopup();
     }
   }
 }
 
-function showCardPopup(clicked) {
+function showCardPopup() {
 
   $('#cardModal').modal('show');
 
@@ -64,9 +64,7 @@ function showCardPopup(clicked) {
     localStorage.setItem("clicked", "true");
   });
 
-  $("#close-card").on("click", () => {
-    $('#cardModal').modal('hide');
-
-    localStorage.setItem("clicked", "true");
-  });
+  // $("#close-card").on("click", () => {
+  //   $('#cardModal').modal('hide');
+  // });
 }
