@@ -11,8 +11,8 @@ $(document).ready(function () {
     copyURL();
 
     const clicked = localStorage.getItem("clickedCard");
-    if (clicked !== true) {
-      if (clickCount >= 10 && clickCount % 10 === 9) {
+    if (clicked !== "true") {
+      if (clickCount >= 9 && clickCount % 10 === 9) {
         showCardPopup();
       }
       localStorage.setItem('clickCount', ++clickCount);
