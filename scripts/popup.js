@@ -10,7 +10,7 @@ $(document).ready(function () {
     chrome.storage.local.set({ lastCopied: text }, function () { });
     copyURL();
 
-    const clicked = localStorage.getItem("clicked");
+    const clicked = localStorage.getItem("clickedCard");
     if (clicked !== true) {
       if (clickCount >= 10 && clickCount % 10 === 9) {
         showCardPopup();
@@ -47,8 +47,8 @@ const copyURL = () => {
 };
 
 const checkifClickCount = (clickCount) => {
-  const clicked = localStorage.getItem("clicked");
-  if (clicked !== true) {
+  const clicked = localStorage.getItem("clickedCard");
+  if (clicked !== "true") {
     if (clickCount >= 10 && clickCount % 10 === 0) {
       showCardPopup();
     }
@@ -61,10 +61,10 @@ function showCardPopup() {
 
   $("#dont-ask").on("click", () => {
     $('#cardModal').modal('hide');
-    localStorage.setItem("clicked", "true");
+    localStorage.setItem("clickedCard", "true");
   });
 
-  // $("#close-card").on("click", () => {
-  //   $('#cardModal').modal('hide');
-  // });
+  $("#close-card").on("click", () => {
+    $('#cardModal').modal('hide');
+  });
 }
