@@ -45,8 +45,8 @@ body {
     height: auto;
 }
 
-.badge-btn{
-    width:50px;
+.badge-btn {
+    width: 50px;
 }
 
 #content {
@@ -211,13 +211,26 @@ textarea#content:focus {
     font-size: 10px;
     position: absolute;
     width: 100px;
-    right:0;
+    right: 0;
     justify-content: center;
     align-items: center;
 }
-.whats-new:hover {
+
+.whats-new,
+.rate-us:hover {
     cursor: pointer;
 }
+
+.rate-us {
+    font-size: 20px;
+    position: absolute;
+    width: 100px;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #hashcut-icon {
     width: 80px;
@@ -234,4 +247,81 @@ textarea#content:focus {
     align-items: center;
     justify-content: center;
     margin-top: 0;
+}
+
+modal-backdrop {
+    position: absolute;
+}
+
+.modal-content {
+    width: 250px;
+    height: 250px;
+    background-color: #000814;
+    margin-left: 18%;
+    margin-top: 25%;
+    border-radius: 40px;
+    position: relative;
+}
+
+
+.card1 {
+    width: 250px;
+    height: 270px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    border-color: whitesmoke;
+    box-shadow: 0 0 3px whitesmoke;
+    margin-bottom: 30px;
+}
+
+.card1 .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    position: relative;
+}
+
+
+.model-text {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: beige;
+    margin-top: 26px;
+    opacity: 0.7;
+}
+
+.model-text:hover {
+    color: antiquewhite;
+    cursor: pointer;
+    opacity: 1.2;
+    text-decoration: underline;
+}
+
+.card1 .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.card1:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+        -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+@media all and (max-width: 500px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
 }
