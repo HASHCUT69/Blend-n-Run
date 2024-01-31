@@ -1,0 +1,111 @@
+.editorcontainer {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	height: 100vh;
+	font-size: 18px;
+}
+.editor {
+	flex: 2;
+	font-size: inherit;
+	border: 1px solid black;
+	padding: 5px ! important;
+	margin: 2px;
+	overflow: auto;
+}
+#output {
+	flex: 1;
+	padding: 5px;
+	overflow: auto;
+}
+[role="toolbar"]{
+	counter-reset: buttoncounter;
+}
+[role="toolbar"] button {
+	height: 1.4em;
+	position: relative;
+	padding: 1px 4px 14px;
+	min-width: 2.2em;
+	vertical-align: bottom;
+	counter-increment: buttoncounter;
+	outline: none; /* we will use the highlighting below to indicate focus */
+}
+[role="toolbar"] button::before {
+	content: attr(name);
+	position: relative;
+	bottom: 0.2em;
+}
+[role="toolbar"] button.Close {
+	float: right;
+	margin: 2px 2px 0;
+}
+[role="toolbar"] button.Close::before {
+	content: '\1F7AD';
+	color: red;
+}
+[role="toolbar"] button::after {
+	position: absolute;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	bottom: 0.1em;
+}
+[role="toolbar"].capturing-menu:focus-within:not(:active) button::after {
+	content: counter(buttoncounter, upper-alpha);
+	position: absolute;
+	opacity: 20%;
+	z-index: 1;
+	top: -0.3em;
+	left: 0;
+	width: 100%;
+	font-size: 36px;
+	font-family: sans-serif;
+	font-style: normal;
+	color: black;
+	font-weight: bold;
+	animation: none;
+}
+[role="toolbar"] button.highlight , [role="toolbar"] button[aria-pressed="true"]{
+	/* background: linear-gradient(ThreeDHighlight, ThreeDHighlight, ButtonFace); CSS system colors are deprecated */
+	background: linear-gradient(lightgrey, lightgrey, rgb(240,240,240));
+	border: 2px inset rgb(240,240,240);
+	border-radius: 4px;
+}
+[role="toolbar"] button:focus {
+	background: linear-gradient(grey, grey, rgb(240,240,240));
+	border: 2px inset black;
+	border-radius: 4px;
+}	
+#statusbar {
+	padding: 2px;
+}
+#statusbar span[role=alert] {
+	transition: opacity 4s 2s;
+}
+#statusbar span[role=alert].hidden {
+	opacity: 0;
+}
+#statusbar label {
+	display: flex;
+}
+#statusbar .success {
+	color: green;
+	padding: 0 2px;
+}
+#statusbar .failure {
+	color: red;
+	padding: 0 2px;
+}
+#statusbar label strong {
+	/* the prompt */
+	padding-right: 2px;
+}
+#statusbar input {
+	flex: auto;
+	unicode-bidi: bidi-override;
+}
+
+#wordcount {
+	float: right;
+	margin: 0 1em;
+}
